@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>Array</title>
+
+</head>
+<body>
+	<center>
+	<h1>Playwright Training</h1>
+	</center>
+<br>
+<br>
+
+<script>
+
+const car =["Hyndai","Honda","Kia","Marithi"]
+
+document.write(car+"<br>");
+
+const mobile =[];
+mobile[0]="Iphone";
+mobile[1]="Samsung";
+mobile[2]="Moto";
+mobile[3]="Poco";
+
+document.write(mobile+"<br>");
+
+const laptop = new Array("HP","Dell","Lenevo"); //laptop object is const but value might change
+
+document.write(laptop+"<br>");
+document.write(laptop[2]+"<br>");
+
+for(let i=0;i<laptop.length; i++)
+{
+	document.write(laptop[i]+"<br>");
+}
+
+laptop[2]="Acer";
+
+for(let i=0;i<laptop.length; i++)
+{
+	document.write(laptop[i]+"<br>");
+}
+
+//const person=["Murali", "Arun",27];
+const person = {firstName:"Murali",lastName:"Arun",age:27};
+
+
+document.write(person.lastName+"<br>");
+
+//document.write(Array.isArray(person)+"<br>");
+//document.write(laptop instanceof Array);
+
+
+
+
+
+//Multiple object within a object
+const array1 = [];
+array1[0]=laptop;
+array1[1]=mobile;
+array1[2]=car;
+
+document.write(laptop[laptop.length-1]+"<br>");
+
+//add a value in array
+laptop.push("Mac");
+document.write(laptop+"<br>");
+
+
+
+laptop[laptop.lenght]="Asus";
+document.write(laptop+"<br>");
+
+laptop[8]="Macplus";
+document.write(laptop+"<br>");
+
+
+//array into String
+
+document.write(laptop.toString()+"<br>");
+document.write(laptop.join("*")+"<br>");
+
+document.write(laptop.at(-1)+"<br>");
+
+
+//remove tha last element
+laptop.pop();
+document.write(laptop+"<br>");
+
+// remove first element & replace its position
+
+laptop.shift();
+document.write(laptop+"<br>");
+document.write(laptop[1]+"<br>");
+
+//add the element in first position
+
+document.write(laptop.unshift("Macplus")+"<br>"); //to get the lenght of the array
+document.write(laptop+"<br>");
+
+
+document.write(laptop.concat(car)+"<br>");
+document.write(laptop.concat(car,mobile)+"<br>");
+document.write(laptop+"<br>");
+
+document.write(laptop.concat("Playwright")+"<br>");
+
+
+// copy to 
+
+//document.write(car.copyWithin(2,0)+"<br>"); 
+
+//document.write(car.copyWithin(2,0,1)+"<br>"); // first indext copy to 2 index
+
+
+//add perticular position
+//car.splice(2,0,"Ford");
+//document.write(car+"<br>");
+
+//car.splice(2,1,"Ford");
+//document.write(car+"<br>");
+
+car.splice(2,1);
+//document.write(car+"<br>");
+
+const splicedcar = car.toSpliced(2,1)
+document.write(splicedcar+"<br>");
+document.write(car+"<br>");
+
+//remove before the given index
+document.write(laptop+"<br>");
+const laptops = laptop.slice(3);
+document.write(laptops+"<br>");
+
+//remove after the given index
+document.write(laptop+"<br>");
+const laptop1 = laptop.slice(0,6);
+document.write(laptop1+"<br>");
+
+document.write(car+"<br>");
+document.write(car.indexOf("Hyndai")+"<br>");
+
+let poition = car.indexOf("Hyndai")+1;
+
+document.write(poition+"<br>");
+
+document.write(car.indexOf("Hyndai",1)+"<br>");
+document.write(car.indexOf("Hyndai",-3)+"<br>");
+
+
+car.push("Hyndai")
+document.write(car+"<br>");
+document.write(car.indexOf("Hyndai")+"<br>");
+document.write(car.lastIndexOf("Hyndai")+"<br>");
+document.write(car.lastIndexOf("Hyndai",-2)+"<br>");
+
+
+//contain a array is there or not
+
+document.write(car.includes("Jaquar")+"<br>");
+document.write(car.includes("Honda")+"<br>");
+
+
+
+const number = [1,2,3,4,5];
+
+let first = number.find(fun1);
+let findex = number.findIndex(fun1);
+
+document.write(first+"<br>");
+
+function fun1(value,index,Array){
+return value>9;
+
+}
+
+document.write(findex+"<br>");
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

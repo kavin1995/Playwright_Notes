@@ -1,0 +1,70 @@
+<!-- write html page to display a Hello message and name details.-->
+<html>
+<head>
+	<title>Demo Web Page</title>
+	
+</head>
+<body>
+	<center>
+		<h1>Welcome to Playwright Training!!</h1>
+	</center>
+		
+	<script>
+		let text="Welcome To Expleo. Expleo is a greate company";
+		document.write(text.length+"<br>");
+		
+		let text1="The Manchester united football team are called \"Red Devils\"";
+		document.write(text1+"<br>");
+		
+		let text2="The Manchester united football team are called \'Red Devils\'";
+		document.write(text2+"<br>");
+		
+		document.write(text1.charAt(0)+"<br>");
+		
+		document.write(text1.at(2)+"<br>");
+		
+		document.write(text1.charCodeAt(2)+"<br>");
+		
+		document.write(text1.slice(3,15)+"<br>");
+		
+		document.write(text1.substring(3,15)+"<br>");
+		
+		document.write(text1.substring(3)+"<br>");
+		
+		document.write(text1.slice(3)+"<br>");
+		
+		document.write(text1.substr(3,11)+"<br>");
+		
+		document.write(text1.substr(3)+"<br>");
+		
+		document.write(text1.substr(-13)+"<br>");
+		
+		document.write(text1.toUpperCase()+"<br>");
+		
+		document.write(text1.toLowerCase()+"<br>");
+		
+		let text3="     Amarja     ";
+		document.write(text.concat(" ",text3)+"<br>");
+		
+		document.write(text3.trim()+1+"<br>");
+		
+		document.write(text3.trimStart()+"<br>");
+		
+		document.write(text3.trimEnd()+"<br>");
+		let text4="Amarja";
+		
+		document.write(text4.padStart(10,"*")+"<br>");
+		
+		document.write(text4.padEnd(10,"*")+"<br>");
+		
+		document.write(text4.repeat(2)+"<br>");
+		
+		document.write(text.replace("Expleo", "Playwright")+"<br>");
+		
+		document.write(text.replace(/expleo/i, "Playwright")+"<br>");
+		
+		document.write(text.replace(/Expleo/g, "Playwright")+"<br>");
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+[3:28 PM] Santhosh Ravi
+<html>
+
+<head>
+
+<title> Javascript </title>
+
+</head>
+
+<body>
+ 
+<p id="par1"> Enter the number </p>
+
+<input id="val1"/>
+ 
+<button onclick="func1()"> Click </button>
+<p id="par2"> </p>
+<script>
+function func1(){
+let no=document.getElementById("val1").value;
+let result="";
+for (let i=0;i<=15;i++){
+       if(number %2==0){
+        console.log("The number is even");
+        }
+else{
+console.log("The number is odd");
+}
+ document.getElementById("par2").innerHTML=result;
+}
+ </script>
+</body>
+</html>

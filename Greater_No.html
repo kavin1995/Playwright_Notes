@@ -1,0 +1,45 @@
+<!-- Program to print multiplication Table-->
+<html>
+<head>
+	<title>Demo Web Page</title>
+	
+</head>
+<body>
+	<center>
+		<h1>Welcome to Playright Training!!</h1>
+	</center>
+	<br>
+	<br>
+	<br>
+	<p id="para1">Input 2 numbers 
+	
+	</p>
+
+	<input id="val1"/>
+	<br>
+	<br>
+	<input id="val2"/>
+
+		<button onclick="fun1()">Click</button>
+	<p id="para2">
+	</p>
+	<script>
+		function fun1(){
+			let no1=document.getElementById("val1").value;
+			let no2=document.getElementById("val2").value;
+			let num1=Number(no1);
+			let num2=Number(no2);
+			
+			if(num1>num2)
+				document.getElementById("para2").innerHTML ="No 1 is greater: "+num1;
+			else
+				document.getElementById("para2").innerHTML ="No 2 is greater: "+num2;
+			
+		}
+		
+		
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>object</title>
+
+</head>
+<body>
+	<center>
+	<h1>Playwright Training</h1>
+	</center>
+<br>
+<br>
+
+<script>
+class Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+  calculateArea() {
+    return this.width * this.height;
+  }
+  calculatePerimeter() {
+    return 2 * (this.width + this.height);
+  }
+}
+const rectangle = new Rectangle(50, 25);
+const area = rectangle.calculateArea();
+const perimeter = rectangle.calculatePerimeter();
+
+document.write(area+"<br>")
+document.write(perimeter+"<br>")
+
+</script>
+</body>
+</html>
